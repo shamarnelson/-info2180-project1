@@ -80,6 +80,10 @@ h3{
     color: white;
 
 }
+article-body img{
+border-radius: 50%;
+
+}
 
 footer{
     background-color: #48BB78;
