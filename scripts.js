@@ -9,10 +9,9 @@ function submission(){
         alert("PLease enter a vaild email address.");
     }
     else{
-        alert{"Thank you! Your email address" +" "+ val +" has been to our mailing list!");
+        alert("Thank you! Your email address" +" "+ val +" has been to our mailing list!");
     
     }
-
-    }
     return inputn
-}
+    }
+    
