@@ -9,46 +9,68 @@ body {
     width: 100%;
     max-width: 960px;
     font-size: 18px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto , 'Helvetica Neue', Arial, "Noto Sans", sans-serif
-
-
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto , 'Helvetica Neue', Arial, "Noto Sans", sans-serif;
+    
 }
 
-.container > div.h1,div.nav{
-    
-    display: grid;
+header .container{
+    display: flex;
     font-size: 18px;
     justify-content: space-between;
     background-color: white;
 
 }
 
-h1{
-    display: inline-block;
-    padding-right: 50px;
+
+header .container nav{
+    float: right;
+    padding-left: 60px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    font-size: medium;
+}
     
-   
-  
+
+ h1{
+    float: left;
+    padding-left: 250px;
+    padding-top: 30px;
+    
+    font-size: medium;
 }
 
-ul{
+nav ul{
+    text-align: center;
+
+}
+
+nav ul li{
     display: inline-block;
-
+    color: #6b7280;
 }
-ul:hover{
+
+nav ul li a{
+    color:#6b7280;
+    text-decoration: none;
+    
+}
+
+nav ul li a:hover{
     color: #5A67D8;
     
 }
 
 li{
-    display:inline-block;
+    display:flex;
     padding: 20px;
+    text-decoration: none;
+    float: right;
     
 }
 
 li:hover{
     color:#6b7280;
-    
+
 }
 
 .learn-about{
@@ -73,6 +95,7 @@ li:hover{
     height: 450px;
     width: 25%;
     padding: 20px;
+    border-color: #E2E8F0;
 
 }
 
@@ -87,7 +110,10 @@ li:hover{
     color: #48BB78;
     font-size: 21px;
 }
-
+img{
+    max-width: 100%;
+    height: auto;
+}
 .overview-hero{
     display: grid;
     background-color: #E2E8F0;
@@ -95,9 +121,10 @@ li:hover{
     margin-right: 15em;
 
 }
+
 .overview-hero-image img{
     float: left;
-    padding-right: 100px;
+    padding-right: 80px;
 }
 
 .overview-hero-text{
@@ -124,6 +151,7 @@ h3{
     padding: 5em;
     margin-left: 10em;
     margin-right: 15em;
+    
 }
 
 .testing a{
@@ -170,7 +198,6 @@ h3{
     color: white;
     display: grid;
     text-align: center;
-    background-color: #48BB78;
     padding: 5em;
     margin-left:10em;
     margin-right: 15em;
@@ -196,18 +223,19 @@ form input{
 form .btn{
     background-color: #5A67D8;
     color: white;
-    padding: 10px 24px;
+    padding: 15px 20px;
     border: 2px solid #5A67D8;
  
-
-
 }
-
+.btn{
+    text-decoration: none;
+}
 
 footer{
     background-color: #48BB78;
     color: white;
-    padding: 2em;
+    padding: 1em;
     margin-left: 10em;
     margin-right: 15em;
+    background-color: #4A5568;
 }
